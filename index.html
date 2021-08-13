@@ -9,14 +9,13 @@
 </head>
 <body>
   <div class="container">
-    <div class="jumbotron">
+    <div style="background:transparent !important" class="jumbotron">
       <h1 id="header">Are you ready to start coding?</h1>
       <h2 id="header">If your are interested in coding please take the following quiz to determine which coding langhuage best suites you!</h2>
     </div>
   </div>
   <div class="container">
     <h4 id="header">Lets start by gathering some info about you</h4>
-    <div class="row">
       <form id="info">
         <label for="inputName">Name</label>
         <input type="text" id="inputName" class="form-control">
@@ -48,8 +47,9 @@
 
         <button type="submit" class="btn btn-primary">Suggest My Language</button>
       </form>
-    </div>
-    <h2><span id="result"></span></h2>
+      <div id="answer">
+        <h1>Based on your answers, your suggested language is <span id="result"></span></h1>
+      </div>
   </div>
 </body>
 </html>
