@@ -15,19 +15,30 @@
     </div>
   </div>
   <div class="container">
-    <h3>Lets start by gathering some info about you</h3>
-    <form id="info">
-      <label for="inputName">Name</label>
-      <input type="text" id="inputName" class="form-control" required>
+    <h4 id="header">Lets start by gathering some info about you</h4>
+    <div class="row">
+      <form id="info">
+        <label for="inputName">Name</label>
+        <input type="text" id="inputName" class="form-control" required>
+  
+        <label for="inputAge">Age</label>
+        <input type="number" id="inputAge" class="form-control" min="0" required>
+  
+        <label for="inputZip">Zipcode</label>
+        <input type="number" id="inputZip" class="form-control" min="0" max="100000" required>
 
-      <label for="inputAge">Age</label>
-      <input type="number" id="inputAge" class="form-control" min="0" required>
+        <label for="inputSport">Which of the following sports would you watch?</label>
+        <select class="form-control" id="inputSport">
+          <option value="1">Futbol</option>
+          <option value="2">Cricket</option>
+          <option value="3">Rugby</option>
+          <option value="4">Boxing</option>
+        </select>
 
-      <label for="inputZip">Zipcode</label>
-      <input type="number" id="inputZip" class="form-control" min="0" required>
-
-      <button type="submit" class="btn btn-primary">Suggest My Language</button>
-    </form>
+        <button type="submit" class="btn btn-primary">Suggest My Language</button>
+      </form>
+    </div>
+    <h2><span id="result"></span></h2>
   </div>
 </body>
 </html>
