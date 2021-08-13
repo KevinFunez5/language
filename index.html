@@ -8,9 +8,26 @@
   <title>Language Suggester</title>
 </head>
 <body>
-  <div class="jumbotron">
-    <h1>Welcome</h1>
-    <h2>If your are interested in coding please take the following quiz to determine which</h2>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 id="header">Are you ready to start coding?</h1>
+      <h2 id="header">If your are interested in coding please take the following quiz to determine which coding langhuage best suites you!</h2>
+    </div>
+  </div>
+  <div class="container">
+    <h3>Lets start by gathering some info about you</h3>
+    <form id="info">
+      <label for="inputName">Name</label>
+      <input type="text" id="inputName" class="form-control" required>
+
+      <label for="inputAge">Age</label>
+      <input type="number" id="inputAge" class="form-control" min="0" required>
+
+      <label for="inputZip">Zipcode</label>
+      <input type="number" id="inputZip" class="form-control" min="0" required>
+
+      <button type="submit" class="btn btn-primary">Suggest My Language</button>
+    </form>
   </div>
 </body>
 </html>
