@@ -19,21 +19,32 @@
     <div class="row">
       <form id="info">
         <label for="inputName">Name</label>
-        <input type="text" id="inputName" class="form-control" required>
-  
+        <input type="text" id="inputName" class="form-control">
+
         <label for="inputAge">Age</label>
         <input type="number" id="inputAge" class="form-control" min="0" required>
   
         <label for="inputZip">Zipcode</label>
-        <input type="number" id="inputZip" class="form-control" min="0" max="100000" required>
+        <input type="number" id="inputZip" class="form-control" min="0" required>
 
         <label for="inputSport">Which of the following sports would you watch?</label>
         <select class="form-control" id="inputSport">
-          <option value="1">Futbol</option>
-          <option value="2">Cricket</option>
-          <option value="3">Rugby</option>
-          <option value="4">Boxing</option>
+          <option value="100">Futbol</option>
+          <option value="200">Cricket</option>
+          <option value="300">Rugby</option>
+          <option value="400">Boxing</option>
         </select>
+
+        <label for="inputSport">Whats your favorite school subject?</label>
+        <select class="form-control" id="inputSport">
+          <option value="100">Math</option>
+          <option value="200">History</option>
+          <option value="300">English</option>
+          <option value="400">Science</option>
+        </select>
+
+        <label for="inputExpirience">Years of Expirience coding</label>
+        <input type="number" id="input" class="form-control" min="0" required>
 
         <button type="submit" class="btn btn-primary">Suggest My Language</button>
       </form>
