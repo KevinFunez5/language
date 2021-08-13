@@ -4,6 +4,7 @@ $(document).ready(function() {
     const age = parseInt($("input#inputAge").val());
     const zip = parseInt($("input#inputZip").val());
     const sport = parseInt($("input#inputSport").val());
+    const subject = parseInt($("input#input").val());
 
     if ((age + zip) >= 90000){
       $("span#result").text("Javascript")
